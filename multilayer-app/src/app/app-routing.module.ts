@@ -10,6 +10,12 @@ import { PublicLayoutComponent } from './Layouts-section/public-layout/public-la
 const routes: Routes = [
  {path:'',component:PublicLayoutComponent, children:OPENTOPUBLIC__MODULE_ROUTES},
  { path: 'admin', component: AdminLayoutComponent, children: ADMIN_MODULE_ROUTES }
+  
+  
+  /* { path: 'admin', component: AdminLayoutComponent L,  C children: ADMIN_MODULE_ROUTES } {
+        path: 'admin',
+        loadChildren: () => import('../admin/admin.module').then(m => m.AdminModule)
+    }*/
 ];
 
 @NgModule({
